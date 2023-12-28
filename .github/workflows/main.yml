@@ -18,6 +18,6 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t yourusername/my-python-app:latest .
-          docker login -u yourusername -p ${{ secrets.DOCKERHUB_TOKEN }}
+          docker build -t isteyak/my-python-app:latest .
+          docker login -u isteyak -p ${{ secrets.DOCKERHUB_TOKEN }}
           docker push yourusername/my-python-app:latest
